@@ -12,7 +12,7 @@ void main () {
 
     for (i=0;i<N;i++) {
         *punteroAvector=1+rand()%100;
-        printf("%d  ", vector[i]);
+        printf("%d  ", *punteroAvector);
         punteroAvector++;
     }
 }
