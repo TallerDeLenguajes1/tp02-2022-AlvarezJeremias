@@ -8,11 +8,11 @@ void main () {
     srand (time(NULL));
     int i;
     int vector [N];
-    int * punteroAvector= &vector[0];
+    int * punteroAvector= vector;
 
     for (i=0;i<N;i++) {
-        *punteroAvector=1+rand()%100;
-        printf("%d  ", *punteroAvector);
-        punteroAvector++;
+        *(punteroAvector+i)=1+rand()%100;
+        printf("%d  ", *(punteroAvector+i));
+        punteroAvector+i;
     }
 }
